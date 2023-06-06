@@ -1,6 +1,7 @@
 import { Outlet, NavLink, Link } from "react-router-dom";
 
 import github from "../../assets/github.svg";
+import ambg_logo from "../../assets/ambg_logo.svg";
 
 import styles from "./Layout.module.css";
 
@@ -25,7 +26,11 @@ const Layout = () => {
                                 </NavLink>
                             </li>
                             <li className={styles.headerNavLeftMargin}>
-                                <a href="https://aka.ms/entgptsearch" target={"_blank"} title="Github repository link">
+                                <a
+                                    href="https://github.com/AMBGASG/DATA.AI-Azure-OpenAI-Microsoft-Advisor-Bot"
+                                    target={"_blank"}
+                                    title="Github repository link"
+                                >
                                     <img
                                         src={github}
                                         alt="Github logo"

@@ -8,7 +8,7 @@ export type ExampleModel = {
 };
 
 const EXAMPLES: ExampleModel[] = [
-    { text: "What is openAI?", value: "What is openAI?" },
+    { text: "What is OpenAI?", value: "What is OpenAI?" },
     { text: "How can I migrate my data from On-Prem Storage?", value: "How can I migrate my data from On-Prem Storage?" },
     { text: "Is Microsoft Fabric GA?", value: "Is Microsoft Fabric GA?" }
 ];

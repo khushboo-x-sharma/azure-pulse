@@ -1,7 +1,7 @@
 import { Outlet, NavLink, Link } from "react-router-dom";
 
 import github from "../../assets/github.svg";
-import ambg_logo from "../../assets/ambg_logo.svg";
+import ambg_logo from "../../assets/ambg_logo_white.svg";
 
 import styles from "./Layout.module.css";
 
@@ -11,11 +11,19 @@ const Layout = () => {
             <header className={styles.header} role={"banner"}>
                 <div className={styles.headerContainer}>
                     <Link to="/" className={styles.headerTitleContainer}>
+                        <img
+                            src={ambg_logo}
+                            alt="AMBG logo"
+                            // aria-label="Link to github repository"
+                            width="20px"
+                            height="20px"
+                            // className={styles.githubLogo}
+                        />
                         <h3 className={styles.headerTitle}>GPT + Enterprise data | Sample</h3>
                     </Link>
                     <nav>
                         <ul className={styles.headerNavList}>
-                            <li>
+                            {/* <li>
                                 <NavLink to="/" className={({ isActive }) => (isActive ? styles.headerNavPageLinkActive : styles.headerNavPageLink)}>
                                     Chat
                                 </NavLink>
@@ -24,7 +32,7 @@ const Layout = () => {
                                 <NavLink to="/qa" className={({ isActive }) => (isActive ? styles.headerNavPageLinkActive : styles.headerNavPageLink)}>
                                     Ask a question
                                 </NavLink>
-                            </li>
+                            </li> */}
                             <li className={styles.headerNavLeftMargin}>
                                 <a
                                     href="https://github.com/AMBGASG/DATA.AI-Azure-OpenAI-Microsoft-Advisor-Bot"

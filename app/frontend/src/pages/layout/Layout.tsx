@@ -15,14 +15,16 @@ const Layout = () => {
                             src={ambg_logo}
                             alt="AMBG logo"
                             // aria-label="Link to github repository"
-                            width="20px"
-                            height="20px"
+                            width="100px"
+                            height="100px"
                             // className={styles.githubLogo}
                         />
-                        <h3 className={styles.headerTitle}>GPT + Enterprise data | Sample</h3>
+                        {/* <h3 className={styles.headerTitle}>GPT + Enterprise data | Sample</h3> */}
+                        {/* <h3 className={styles.headerTitle}>Azure Pulse</h3> */}
                     </Link>
                     <nav>
                         <ul className={styles.headerNavList}>
+                            <h3 className={styles.headerTitle}>Azure Pulse</h3>
                             {/* <li>
                                 <NavLink to="/" className={({ isActive }) => (isActive ? styles.headerNavPageLinkActive : styles.headerNavPageLink)}>
                                     Chat
@@ -34,6 +36,7 @@ const Layout = () => {
                                 </NavLink>
                             </li> */}
                             <li className={styles.headerNavLeftMargin}>
+                                <h4 className={styles.headerTitle}>Powered by AMBG</h4>
                                 <a
                                     href="https://github.com/AMBGASG/DATA.AI-Azure-OpenAI-Microsoft-Advisor-Bot"
                                     target={"_blank"}
@@ -51,7 +54,7 @@ const Layout = () => {
                             </li>
                         </ul>
                     </nav>
-                    <h4 className={styles.headerRightText}>Azure OpenAI + Cognitive Search</h4>
+                    {/* <h4 className={styles.headerRightText}>Azure OpenAI + Cognitive Search</h4> */}
                 </div>
             </header>
 

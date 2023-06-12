@@ -13,16 +13,24 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-right: 12px;
-    margin-left: 12px;
 }
 
-.headerTitleContainer {
+.headerLeft {
     display: flex;
-    align-items: left;
-    margin-right: 40px;
-    color: #f2f2f2;
-    text-decoration: none;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.headerCentre {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.headerRight {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
 }
 
 .headerLogo {
@@ -74,5 +82,6 @@
 }
 
 .githubLogo {
-    height: 20px;
+    height: 40px;
+    width: 40px;
 }

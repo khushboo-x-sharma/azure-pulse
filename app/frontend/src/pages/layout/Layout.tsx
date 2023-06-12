@@ -1,5 +1,5 @@
 import { Outlet, NavLink, Link } from "react-router-dom";
-
+import { BotSparkleFilled } from "@fluentui/react-icons";
 import github from "../../assets/github.svg";
 import ambg_logo from "../../assets/ambg_logo_white.svg";
 
@@ -10,51 +10,28 @@ const Layout = () => {
         <div className={styles.layout}>
             <header className={styles.header} role={"banner"}>
                 <div className={styles.headerContainer}>
-                    <Link to="/" className={styles.headerTitleContainer}>
-                        <img
-                            src={ambg_logo}
-                            alt="AMBG logo"
-                            // aria-label="Link to github repository"
-                            width="100px"
-                            height="100px"
-                            // className={styles.githubLogo}
-                        />
-                        {/* <h3 className={styles.headerTitle}>GPT + Enterprise data | Sample</h3> */}
-                        {/* <h3 className={styles.headerTitle}>Azure Pulse</h3> */}
+                    <Link to="https://myasg.accenture.com/asg-technology/ambg-asg/?r" className={styles.headerLeft} title="AMBG ASG">
+                        <img src={ambg_logo} alt="AMBG logo" width="100px" height="100px" />
                     </Link>
-                    <nav>
-                        <ul className={styles.headerNavList}>
-                            <h3 className={styles.headerTitle}>Azure Pulse</h3>
-                            {/* <li>
-                                <NavLink to="/" className={({ isActive }) => (isActive ? styles.headerNavPageLinkActive : styles.headerNavPageLink)}>
-                                    Chat
-                                </NavLink>
-                            </li>
-                            <li className={styles.headerNavLeftMargin}>
-                                <NavLink to="/qa" className={({ isActive }) => (isActive ? styles.headerNavPageLinkActive : styles.headerNavPageLink)}>
-                                    Ask a question
-                                </NavLink>
-                            </li> */}
-                            <li className={styles.headerNavLeftMargin}>
-                                <h4 className={styles.headerTitle}>Powered by AMBG</h4>
-                                <a
-                                    href="https://github.com/AMBGASG/DATA.AI-Azure-OpenAI-Microsoft-Advisor-Bot"
-                                    target={"_blank"}
-                                    title="Github repository link"
-                                >
-                                    <img
-                                        src={github}
-                                        alt="Github logo"
-                                        aria-label="Link to github repository"
-                                        width="20px"
-                                        height="20px"
-                                        className={styles.githubLogo}
-                                    />
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                    {/* <h4 className={styles.headerRightText}>Azure OpenAI + Cognitive Search</h4> */}
+                    <li className={styles.headerCentre}>
+                        <BotSparkleFilled fontSize={"40px"} primaryFill={"rgba(140, 20, 252,1)"} aria-hidden="true" aria-label="Pulse logo" />
+                        {/* </li>
+                    <li className={styles.headerCentre}> */}
+                        <h1 className={styles.headerTitle}>Azure Pulse</h1>
+                    </li>
+                    {/* <h5 className={styles.headerTitle}>Powered by AMBG</h5> */}
+                    <li className={styles.headerRight}>
+                        <a href="https://github.com/AMBGASG/DATA.AI-Azure-OpenAI-Microsoft-Advisor-Bot" target={"_blank"} title="Github repository link">
+                            <img
+                                src={github}
+                                alt="Github logo"
+                                aria-label="Link to github repository"
+                                width="30px"
+                                height="30px"
+                                className={styles.githubLogo}
+                            />
+                        </a>
+                    </li>
                 </div>
             </header>
 

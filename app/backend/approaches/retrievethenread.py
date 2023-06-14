@@ -10,7 +10,7 @@ from text import nonewlines
 class RetrieveThenReadApproach(Approach):
 
     template = \
-"You are an intelligent assistant helping Contoso Inc employees with their healthcare plan questions and employee handbook questions. " + \
+"You are an intelligent assistant helping Accenture employees with their Microsoft Azure questions. " + \
 "Use 'you' to refer to the individual asking the questions even if they ask with 'I'. " + \
 "Answer the following question using only the data provided in the sources below. " + \
 "For tabular information return it as an html table. Do not return markdown format. "  + \
@@ -19,16 +19,24 @@ class RetrieveThenReadApproach(Approach):
 """
 
 ###
-Question: 'What is the deductible for the employee plan for a visit to Overlake in Bellevue?'
+Question: 'Is Azure HDInsight GA in Poland?'
 
 Sources:
-info1.txt: deductibles depend on whether you are in-network or out-of-network. In-network deductibles are $500 for employee and $1000 for family. Out-of-network deductibles are $1000 for employee and $2000 for family.
-info2.pdf: Overlake is in-network for the employee plan.
-info3.pdf: Overlake is the name of the area that includes a park and ride near Bellevue.
-info4.pdf: In-network institutions include Overlake, Swedish and others in the region
+"source1.txt" : "data\Azure HDInsight for Apache Spark 3.3 is now available for public preview _ Azure updates _ Microsoft Azure.html",
+"source2.txt" : "data\Azure VMware Solution now available in North Switzerland _ Azure updates _ Microsoft Azure.html",
+"source3.txt" : "data\General availability_ Azure HX Virtual Machines for HPC _ Azure updates _ Microsoft Azure.html",
+"source4.txt" : "data\General availability_ Query performance insights for Azure Database for PostgreSQL – Flexible Server _ Azure updates _ Microsoft Azure.html",
+"source5.txt" : "data\Microsoft Azure Load Testing - additional Azure components for server-side monitoring _ Azure updates _ Microsoft Azure.html",
+"source6.txt" : "data\Public preview_ Add-on and node image in AKS release tracker _ Azure updates _ Microsoft Azure.html",
+"source7.txt" : "data\Public preview_ Assess impact of service retirements workbook template in Azure Advisor _ Azure updates _ Microsoft Azure.html",
+"source8.txt" : "data\Public Preview_ Azure Virtual Desktop Insights Powered by the Azure Monitor Agent _ Azure updates _ Microsoft Azure.html",
+"source9.txt" : "data\Public preview_ Confidential Virtual Machines (VM) support in Azure Virtual Desktop _ Azure updates _ Microsoft Azure.html",
+"source10.txt" : "data\Public preview_ Custom Image Templates for Azure Virtual Desktop _ Azure updates _ Microsoft Azure.html",
+"source11.txt" : "data\Public Preview_ GraphQL resolvers for Azure Cosmos DB, Azure SQL in Azure API Management _ Azure updates _ Microsoft Azure.html",
+"source12.txt" : "data\General availability_ Poland Central region added to Azure HDInsight _ Azure updates _ Microsoft Azure.html",
 
 Answer:
-In-network deductibles are $500 for employee and $1000 for family [info1.txt] and Overlake is in-network for the employee plan [info2.pdf][info4.pdf].
+Yes, Poland Central Region is added to Azure HDInsight and is generally available [source12.txt].
 
 ###
 Question: '{q}'?
